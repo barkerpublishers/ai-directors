@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { FadeIn } from '@/components/animations/FadeIn'
 
 export function Hero() {
@@ -12,7 +11,7 @@ export function Hero() {
   return (
     <div className="relative min-h-screen bg-[#0A0A0A] overflow-hidden pt-[76px]">
       {/* Spotlight from Figma - positioned top right */}
-      <div className="absolute -top-[20%] -right-[10%] w-[80%] h-[120%] pointer-events-none">
+      <div className="absolute -top-[30%] -right-[20%] w-[120%] h-[150%] pointer-events-none transform -rotate-[40deg]">
         <div
           className="w-full h-full"
           style={{
@@ -147,22 +146,28 @@ export function Hero() {
                 </div>
               </div>
             </div>
-            <div className="box-border content-stretch flex flex-row h-[91px] items-center justify-center overflow-visible px-4 md:px-8 lg:px-[167px] py-[18px] relative shrink-0 w-full">
-              <div className="box-border content-stretch flex flex-col items-center justify-center max-w-[1200px] overflow-visible p-0 relative shrink-0 w-full">
-                <div className="box-border content-stretch flex flex-col h-[55px] items-center justify-center p-0 relative shrink-0 w-full">
-                  <div className="h-[55px] relative shrink-0 w-full overflow-hidden">
-                    <div className="flex flex-row gap-16 h-[55px] items-center justify-center">
-                      {/* Logo 1 */}
-                      <img alt="Logo 1" className="h-[42px] w-auto" src="/images/logo-1.svg" />
-                      {/* Logo 2 */}
-                      <img alt="Logo 2" className="h-[33px] w-auto" src="/images/logo-2.svg" />
-                      {/* Logo 3 */}
-                      <img alt="Logo 3" className="h-[42px] w-auto" src="/images/logo-3.svg" />
-                      {/* Logo 4 */}
-                      <img alt="Logo 4" className="h-[32px] w-auto" src="/images/logo-4.svg" />
-                      {/* Logo 5 */}
-                      <img alt="Logo 5" className="h-[39px] w-auto" src="/images/logo-5.svg" />
-                    </div>
+            <div className="relative w-full max-w-[1015px] mx-auto overflow-hidden py-4">
+              <div className="relative h-[55px] flex items-center justify-center">
+                {/* Static logos */}
+                <div className="flex items-center gap-16">
+                  <img alt="Logo 1" className="h-[42px] w-[171px] object-contain opacity-60" src="/images/logo-1.svg" />
+                  <img alt="Logo 2" className="h-[33px] w-[142px] object-contain opacity-60" src="/images/logo-2.svg" />
+                  <img alt="Logo 3" className="h-[42px] w-[169px] object-contain opacity-60" src="/images/logo-3.svg" />
+                  <img alt="Logo 4" className="h-[32px] w-[133px] object-contain opacity-60" src="/images/logo-4.svg" />
+                  <img alt="Logo 5" className="h-[39px] w-[99px] object-contain opacity-60" src="/images/logo-5.svg" />
+                </div>
+                
+                {/* Left blur overlay */}
+                <div className="absolute left-0 top-0 bottom-0 w-[283px] pointer-events-none">
+                  <div className="relative w-full h-full">
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent" />
+                  </div>
+                </div>
+                
+                {/* Right blur overlay */}
+                <div className="absolute right-0 top-0 bottom-0 w-[283px] pointer-events-none">
+                  <div className="relative w-full h-full">
+                    <div className="absolute inset-0 bg-gradient-to-l from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent" />
                   </div>
                 </div>
               </div>

@@ -36,6 +36,22 @@
 }
 
 @layer utilities {
+  /* Infinite scroll animation */
+  @keyframes infinite-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-33.33%);
+    }
+  }
+  
+  .animate-infinite-scroll {
+    animation: infinite-scroll 30s linear infinite;
+    display: flex;
+    width: fit-content;
+  }
+
   /* Gradient text with Safari support */
   .gradient-text {
     @apply bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent;
