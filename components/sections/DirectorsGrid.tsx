@@ -7,15 +7,55 @@ interface DirectorCardProps {
   name: string
   channel: string
   views: string
-  avatar: string
+  avatar?: string
   gradient: string
+  video?: string
 }
 
-function DirectorCard({ name, channel, views, avatar, gradient }: DirectorCardProps) {
+function DirectorCard({ name, channel, views, avatar, gradient, video }: DirectorCardProps) {
+  if (video) {
+    return (
+      <div className="relative group">
+        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl" style={{ background: gradient }} />
+        <div className="relative bg-[rgba(28,28,28,0.58)] backdrop-blur-[10px] rounded-2xl overflow-hidden border border-[#2e2e2e] hover:border-[#4e4e4e] transition-all duration-300 h-full">
+          {/* Full Video Background - Vertical/Portrait */}
+          <div className="relative w-full h-[500px] md:h-[500px]">
+            <video 
+              className="absolute inset-0 w-full h-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              src={video}
+            />
+            {/* Gradient overlay for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+          </div>
+          
+          {/* Content overlaid on video */}
+          <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 text-center">
+            <h3 className="font-['Satoshi:Bold',_sans-serif] text-[#ebebeb] text-lg mb-1">
+              {name}
+            </h3>
+            <p className="font-['Satoshi:Regular',_sans-serif] text-[#b3b3b3] text-sm mb-3">
+              {channel}
+            </p>
+            <div className="flex items-center justify-center gap-2">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+              <p className="font-['Satoshi:Bold',_sans-serif] text-[#d1d1d1] text-base">
+                {views}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="relative group">
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-br opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl" style={{ background: gradient }} />
-      <div className="relative bg-[rgba(28,28,28,0.58)] backdrop-blur-[10px] rounded-2xl p-4 md:p-6 border border-[#2e2e2e] hover:border-[#4e4e4e] transition-all duration-300 h-full">
+      <div className="relative bg-[rgba(28,28,28,0.58)] backdrop-blur-[10px] rounded-2xl p-4 md:p-6 border border-[#2e2e2e] hover:border-[#4e4e4e] transition-all duration-300 h-full min-h-[500px] md:min-h-[500px] flex flex-col justify-center">
         {/* Avatar */}
         <div className="flex items-center justify-center mb-4">
           <div className="w-20 h-20 rounded-full bg-gradient-to-br flex items-center justify-center text-3xl font-bold text-white" style={{ background: gradient }}>
@@ -55,50 +95,50 @@ const directors = [
     name: "Marcus Rodriguez",
     channel: "Gaming Universe",
     views: "5.7M views/month",
-    avatar: "MR",
-    gradient: "from-blue-500 to-cyan-500"
+    gradient: "from-blue-500 to-cyan-500",
+    video: "/videos/ai-videogames.mp4"
   },
   {
     name: "Emma Watson",
     channel: "Beauty AI Studio",
     views: "3.1M views/month",
-    avatar: "EW",
-    gradient: "from-pink-500 to-rose-500"
+    gradient: "from-pink-500 to-rose-500",
+    video: "/videos/ai-beauty.mp4"
   },
   {
     name: "Alex Kim",
     channel: "Fitness Revolution",
     views: "4.2M views/month",
-    avatar: "AK",
-    gradient: "from-green-500 to-emerald-500"
+    gradient: "from-green-500 to-emerald-500",
+    video: "/videos/ai-fitness.mp4"
   },
   {
     name: "Jordan Taylor",
     channel: "Comedy Central AI",
     views: "8.9M views/month",
-    avatar: "JT",
-    gradient: "from-yellow-500 to-orange-500"
+    gradient: "from-yellow-500 to-orange-500",
+    video: "/videos/ai-comedy.mp4"
   },
   {
     name: "Priya Patel",
     channel: "Cooking Masters",
     views: "6.4M views/month",
-    avatar: "PP",
-    gradient: "from-red-500 to-orange-500"
+    gradient: "from-red-500 to-orange-500",
+    video: "/videos/ai-food.mp4"
   },
   {
     name: "David Liu",
     channel: "Travel Vlogger AI",
     views: "3.8M views/month",
-    avatar: "DL",
-    gradient: "from-indigo-500 to-purple-500"
+    gradient: "from-indigo-500 to-purple-500",
+    video: "/videos/ai-travel.mp4"
   },
   {
     name: "Sofia Martinez",
     channel: "Fashion Forward",
     views: "5.2M views/month",
-    avatar: "SM",
-    gradient: "from-teal-500 to-cyan-500"
+    gradient: "from-teal-500 to-cyan-500",
+    video: "/videos/ai-fashion.mp4"
   },
   {
     name: "Ryan Anderson",
@@ -137,8 +177,7 @@ export function DirectorsGrid() {
           <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0">
             <div className="relative shrink-0 w-full">
               <h2 className="flex flex-col font-['Satoshi:Regular',_sans-serif] justify-center leading-[35px] md:leading-[50px] not-italic relative shrink-0 text-[#ebebeb] text-[32px] md:text-[50px] text-center tracking-[-1px] md:tracking-[-2px]">
-                <span className="block">Meet The AI Directors</span>
-                <span className="block">Breaking The Internet</span>
+                <span className="block">AI Directors Are Reaching New Audiences Across Every Genre</span>
               </h2>
             </div>
           </div>
@@ -149,7 +188,7 @@ export function DirectorsGrid() {
             <div className="box-border content-stretch flex flex-col items-center justify-start px-4 md:pl-[31.91px] md:pr-[31.92px] py-0 relative shrink-0 w-full">
               <div className="flex flex-col font-['Inter:Regular',_sans-serif] font-normal justify-center leading-[21.6px] not-italic relative shrink-0 text-[#b3b3b3] text-[18px] text-center tracking-[-0.36px]">
                 <p className="block">
-                  These creators are using AI to generate millions of views every month. You could be next.
+                  From gaming to cooking, travel to comedy — these directors are reaching millions of people who share their passions. Learn how to build your own audience around what you love.
                 </p>
               </div>
             </div>

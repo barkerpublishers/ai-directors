@@ -175,13 +175,13 @@ export function Integration() {
         </div>
       </div>
       
-      <div className="box-border content-stretch flex flex-col gap-5 items-center justify-center overflow-clip p-0 relative shrink-0 w-full md:w-[654.92px]">
-        <div className="box-border content-stretch flex flex-col items-start justify-start p-0 px-4 md:px-0 relative shrink-0 w-full md:w-[514px]">
+      <div className="box-border content-stretch flex flex-col gap-5 items-center justify-center overflow-clip p-0 relative shrink-0 w-full max-w-[654.92px]">
+        <div className="box-border content-stretch flex flex-col items-start justify-start p-0 px-4 md:px-0 relative shrink-0 w-full">
           <div className="box-border content-stretch flex flex-col items-center justify-center overflow-clip p-0 relative shrink-0 w-full">
-            <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0">
-              <div className="h-auto md:h-[100px] relative shrink-0 w-full md:w-[514px]">
-                <h2 className="flex flex-col font-['Satoshi:Regular',_sans-serif] justify-center leading-[35px] md:leading-[50px] not-italic relative shrink-0 text-[#ebebeb] text-[30px] md:text-[50px] text-center tracking-[-1px] md:tracking-[-2px]">
-                  <span className="block">Learn How To Direct Millions of Views Directly From Your Pocket</span>
+            <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0 w-full">
+              <div className="relative shrink-0 w-full">
+                <h2 className="font-['Satoshi:Regular',_sans-serif] leading-[35px] md:leading-[50px] not-italic relative text-[#ebebeb] text-[30px] sm:text-[36px] md:text-[50px] text-center tracking-[-1px] md:tracking-[-2px]">
+                  Learn How To Direct Millions of Views Directly From Your Pocket
                 </h2>
               </div>
             </div>
