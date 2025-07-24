@@ -10,8 +10,8 @@ export function Hero() {
 
   return (
     <div className="relative min-h-screen bg-[#0A0A0A] overflow-hidden pt-[76px]">
-      {/* Spotlight from Figma - positioned top right */}
-      <div className="absolute -top-[30%] -right-[20%] w-[120%] h-[150%] pointer-events-none transform -rotate-[40deg]">
+      {/* Spotlight from Figma - responsive positioning */}
+      <div className="absolute -top-[40%] right-0 w-[200%] h-[100%] md:-top-[30%] md:-right-[20%] md:w-[120%] md:h-[150%] pointer-events-none transform -rotate-[40deg] translate-x-[30%] md:translate-x-0">
         <div
           className="w-full h-full"
           style={{
