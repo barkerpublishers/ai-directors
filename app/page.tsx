@@ -3,6 +3,7 @@ import { Hero } from '@/components/sections/Hero'
 import { Integration } from '@/components/sections/Integration'
 import { DirectorsGrid } from '@/components/sections/DirectorsGrid'
 import { CTA } from '@/components/sections/CTA'
+import { Footer } from '@/components/sections/Footer'
 import { SITE_CONFIG } from '@/lib/constants'
 
 export const metadata: Metadata = {
@@ -52,6 +53,7 @@ export default function Home() {
       <Integration />
       <DirectorsGrid />
       <CTA />
+      <Footer />
       
       <script
         type="application/ld+json"
