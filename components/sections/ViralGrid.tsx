@@ -84,70 +84,70 @@ function DirectorCard({ channel, views, avatar, gradient, video }: DirectorCardP
 const directors = [
   {
     name: "Sarah Chen",
-    channel: "Create AI Influencers With Crazy Jobs",
+    channel: "Crazy AI Jobs",
     views: "2.3M views/month",
     gradient: "from-purple-500 to-pink-500",
     video: "/videos/ai-jobs.mp4"
   },
   {
     name: "Marcus Rodriguez",
-    channel: "Create AI Gaming Influencers",
+    channel: "Gaming Universe",
     views: "5.7M views/month",
     gradient: "from-blue-500 to-cyan-500",
     video: "/videos/ai-videogames.mp4"
   },
   {
     name: "Emma Watson",
-    channel: "Create AI Beauty Influencers",
+    channel: "Beauty AI Studio",
     views: "3.1M views/month",
     gradient: "from-pink-500 to-rose-500",
     video: "/videos/ai-beauty.mp4"
   },
   {
     name: "Alex Kim",
-    channel: "Create AI Fitness Influencers",
+    channel: "Fitness Revolution",
     views: "4.2M views/month",
     gradient: "from-green-500 to-emerald-500",
     video: "/videos/ai-fitness.mp4"
   },
   {
     name: "Jordan Taylor",
-    channel: "Create AI Comedy Influencers",
+    channel: "Comedy Central AI",
     views: "8.9M views/month",
     gradient: "from-yellow-500 to-orange-500",
     video: "/videos/ai-comedy.mp4"
   },
   {
     name: "Priya Patel",
-    channel: "Create AI Cooking Influencers",
+    channel: "Cooking Masters",
     views: "6.4M views/month",
     gradient: "from-red-500 to-orange-500",
     video: "/videos/ai-food.mp4"
   },
   {
     name: "David Liu",
-    channel: "Create AI Travel Influencers",
+    channel: "Travel Vlogger AI",
     views: "3.8M views/month",
     gradient: "from-indigo-500 to-purple-500",
     video: "/videos/ai-travel.mp4"
   },
   {
     name: "Sofia Martinez",
-    channel: "Create AI Fashion Influencers",
+    channel: "Fashion Forward",
     views: "5.2M views/month",
     gradient: "from-teal-500 to-cyan-500",
     video: "/videos/ai-fashion.mp4"
   },
   {
     name: "Ryan Anderson",
-    channel: "Create AI Business Influencers",
+    channel: "Business World AI",
     views: "7.1M views/month",
     gradient: "from-violet-500 to-purple-500",
     video: "/videos/ai-business.mp4"
   }
 ]
 
-export function DirectorsGrid() {
+export function ViralGrid() {
   return (
     <div className="box-border content-stretch flex flex-col gap-5 items-center justify-center px-4 md:px-8 lg:px-[174.5px] py-[50px] relative w-full bg-[#0A0A0A]">
       {/* Section Header */}
@@ -159,7 +159,7 @@ export function DirectorsGrid() {
                 <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0 w-full">
                   <div className="flex flex-col font-['Satoshi:Regular',_sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#d1d1d1] text-[18px] text-left text-nowrap">
                     <p className="block leading-[28px] whitespace-pre">
-                      Create AI Models & Influencers
+                      Create Viral AI Videos
                     </p>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ export function DirectorsGrid() {
           <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0">
             <div className="relative shrink-0 w-full">
               <h2 className="flex flex-col font-['Satoshi:Regular',_sans-serif] justify-center leading-[35px] md:leading-[50px] not-italic relative shrink-0 text-[#ebebeb] text-[32px] md:text-[50px] text-center tracking-[-1px] md:tracking-[-2px]">
-                <span className="block">Build Viral AI Characters That Captivate Audiences, Drive Engagement, And Sales... 24/7</span>
+                <span className="block">Transform Your Phone Into An AI-Powered Video Content Machine</span>
               </h2>
             </div>
           </div>
@@ -186,7 +186,7 @@ export function DirectorsGrid() {
             <div className="box-border content-stretch flex flex-col items-center justify-start px-4 md:pl-[31.91px] md:pr-[31.92px] py-0 relative shrink-0 w-full">
               <div className="flex flex-col font-['Inter:Regular',_sans-serif] font-normal justify-center leading-[21.6px] not-italic relative shrink-0 text-[#b3b3b3] text-[18px] text-center tracking-[-0.36px]">
                 <p className="block">
-                  Learn how to create compelling virtual personalities that grow audiences, spark conversations, and convert followers into customers around the clock.
+                  Become an AI Director where the key to millions of views is the phone in your hand. Discover the exact techniques that turn simple ideas into viral, scroll-stopping AI videos that captivate global audiences... build massive followings and drive real sales.
                 </p>
               </div>
             </div>

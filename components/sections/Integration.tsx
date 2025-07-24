@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 import { FadeIn } from '@/components/animations/FadeIn'
 import { ScrollReveal } from '@/components/animations/ScrollReveal'
 
@@ -340,78 +341,58 @@ export function Integration() {
       
       <div className="box-border content-stretch flex flex-wrap flex-row gap-6 md:gap-10 items-center justify-center max-w-[1000px] pb-0 pt-[50px] px-4 md:px-[63px] relative shrink-0 w-full">
         <div className="h-8 relative shrink-0 w-[133px]">
-          <div className="absolute h-8 left-0 overflow-clip top-0 w-[133px]">
-            <div className="absolute h-8 left-0 overflow-clip top-0 w-[133px]">
-              <div className="absolute bottom-[1.219%] left-[0.294%] right-[0.294%] top-[1.219%]">
-                <img
-                  alt=""
-                  className="block max-w-none size-full"
-                  loading="lazy"
-                  src={imgSs103556502891}
-                />
-              </div>
-            </div>
-          </div>
+          <Image
+            alt="Partner logo"
+            className="object-contain"
+            src={imgSs103556502891}
+            width={133}
+            height={32}
+            priority={false}
+          />
         </div>
         
         <div className="h-[33px] relative shrink-0 w-[142px]">
-          <div className="absolute h-[33px] left-0 overflow-clip top-0 w-[142px]">
-            <div className="absolute h-[33px] left-0 overflow-clip top-0 w-[142px]">
-              <div className="absolute bottom-[1.221%] left-[0.282%] right-[0.282%] top-[1.218%]">
-                <img
-                  alt=""
-                  className="block max-w-none size-full"
-                  loading="lazy"
-                  src={imgSs86530361421}
-                />
-              </div>
-            </div>
-          </div>
+          <Image
+            alt="Partner logo"
+            className="object-contain"
+            src={imgSs86530361421}
+            width={142}
+            height={33}
+            priority={false}
+          />
         </div>
         
         <div className="h-[39px] relative shrink-0 w-[99px]">
-          <div className="absolute h-[39px] left-0 overflow-clip top-0 w-[99px]">
-            <div className="absolute h-[39px] left-0 overflow-clip top-0 w-[99px]">
-              <div className="absolute bottom-[1.613%] left-[0.633%] right-[0.632%] top-[1.613%]">
-                <img
-                  alt=""
-                  className="block max-w-none size-full"
-                  loading="lazy"
-                  src={imgSs106019743151}
-                />
-              </div>
-            </div>
-          </div>
+          <Image
+            alt="Partner logo"
+            className="object-contain"
+            src={imgSs106019743151}
+            width={99}
+            height={39}
+            priority={false}
+          />
         </div>
         
         <div className="h-[42px] relative shrink-0 w-[169px]">
-          <div className="absolute h-[42px] left-0 overflow-clip top-0 w-[169px]">
-            <div className="absolute h-[42px] left-0 overflow-clip top-0 w-[169px]">
-              <div className="absolute bottom-[1.19%] left-[0.296%] right-[0.296%] top-[1.19%]">
-                <img
-                  alt=""
-                  className="block max-w-none size-full"
-                  loading="lazy"
-                  src={imgSs114740527271}
-                />
-              </div>
-            </div>
-          </div>
+          <Image
+            alt="Partner logo"
+            className="object-contain"
+            src={imgSs114740527271}
+            width={169}
+            height={42}
+            priority={false}
+          />
         </div>
         
         <div className="h-[42px] relative shrink-0 w-[171px]">
-          <div className="absolute h-[42px] left-0 overflow-clip top-0 w-[171px]">
-            <div className="absolute h-[42px] left-0 overflow-clip top-0 w-[171px]">
-              <div className="absolute bottom-[1.19%] left-[0.292%] right-[0.292%] top-[1.19%]">
-                <img
-                  alt=""
-                  className="block max-w-none size-full"
-                  loading="lazy"
-                  src={imgSs116947674721}
-                />
-              </div>
-            </div>
-          </div>
+          <Image
+            alt="Partner logo"
+            className="object-contain"
+            src={imgSs116947674721}
+            width={171}
+            height={42}
+            priority={false}
+          />
         </div>
       </div>
     </div>

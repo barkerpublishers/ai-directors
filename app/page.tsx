@@ -1,7 +1,11 @@
 import { Metadata } from 'next'
 import { Hero } from '@/components/sections/Hero'
 import { Integration } from '@/components/sections/Integration'
+import { ViralGrid } from '@/components/sections/ViralGrid'
 import { DirectorsGrid } from '@/components/sections/DirectorsGrid'
+import { MonetizationGrid } from '@/components/sections/MonetizationGrid'
+import { ProductStack } from '@/components/sections/ProductStack'
+import { FAQ } from '@/components/sections/FAQ'
 import { CTA } from '@/components/sections/CTA'
 import { Footer } from '@/components/sections/Footer'
 import { SITE_CONFIG } from '@/lib/constants'
@@ -51,7 +55,11 @@ export default function Home() {
     <>
       <Hero />
       <Integration />
+      <ViralGrid />
       <DirectorsGrid />
+      <MonetizationGrid />
+      <ProductStack />
+      <FAQ />
       <CTA />
       <Footer />
       
