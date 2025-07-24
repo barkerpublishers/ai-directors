@@ -12,7 +12,7 @@ interface DirectorCardProps {
   video?: string
 }
 
-function DirectorCard({ name, channel, views, avatar, gradient, video }: DirectorCardProps) {
+function DirectorCard({ channel, views, avatar, gradient, video }: DirectorCardProps) {
   if (video) {
     return (
       <div className="relative group">
@@ -34,12 +34,9 @@ function DirectorCard({ name, channel, views, avatar, gradient, video }: Directo
           
           {/* Content overlaid on video */}
           <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 text-center">
-            <h3 className="font-['Satoshi:Bold',_sans-serif] text-[#ebebeb] text-lg mb-1">
-              {name}
-            </h3>
-            <p className="font-['Satoshi:Regular',_sans-serif] text-[#b3b3b3] text-sm mb-3">
+            <h3 className="font-['Satoshi:Bold',_sans-serif] text-[#ebebeb] text-lg mb-3">
               {channel}
-            </p>
+            </h3>
             <div className="flex items-center justify-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
               <p className="font-['Satoshi:Bold',_sans-serif] text-[#d1d1d1] text-base">
@@ -65,12 +62,9 @@ function DirectorCard({ name, channel, views, avatar, gradient, video }: Directo
         
         {/* Content */}
         <div className="text-center">
-          <h3 className="font-['Satoshi:Bold',_sans-serif] text-[#ebebeb] text-lg mb-1">
-            {name}
-          </h3>
-          <p className="font-['Satoshi:Regular',_sans-serif] text-[#b3b3b3] text-sm mb-3">
+          <h3 className="font-['Satoshi:Bold',_sans-serif] text-[#ebebeb] text-lg mb-3">
             {channel}
-          </p>
+          </h3>
           <div className="flex items-center justify-center gap-2">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
             <p className="font-['Satoshi:Bold',_sans-serif] text-[#d1d1d1] text-base">
@@ -86,10 +80,10 @@ function DirectorCard({ name, channel, views, avatar, gradient, video }: Directo
 const directors = [
   {
     name: "Sarah Chen",
-    channel: "Tech Reviews AI",
+    channel: "Crazy AI Jobs",
     views: "2.3M views/month",
-    avatar: "SC",
-    gradient: "from-purple-500 to-pink-500"
+    gradient: "from-purple-500 to-pink-500",
+    video: "/videos/ai-jobs.mp4"
   },
   {
     name: "Marcus Rodriguez",
@@ -142,10 +136,10 @@ const directors = [
   },
   {
     name: "Ryan Anderson",
-    channel: "Music Production AI",
+    channel: "Business World AI",
     views: "7.1M views/month",
-    avatar: "RA",
-    gradient: "from-violet-500 to-purple-500"
+    gradient: "from-violet-500 to-purple-500",
+    video: "/videos/ai-business.mp4"
   }
 ]
 
