@@ -15,7 +15,7 @@ function DirectorCard({ name, channel, views, avatar, gradient }: DirectorCardPr
   return (
     <div className="relative group">
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-br opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl" style={{ background: gradient }} />
-      <div className="relative bg-[rgba(28,28,28,0.58)] backdrop-blur-[10px] rounded-2xl p-6 border border-[#2e2e2e] hover:border-[#4e4e4e] transition-all duration-300 h-full">
+      <div className="relative bg-[rgba(28,28,28,0.58)] backdrop-blur-[10px] rounded-2xl p-4 md:p-6 border border-[#2e2e2e] hover:border-[#4e4e4e] transition-all duration-300 h-full">
         {/* Avatar */}
         <div className="flex items-center justify-center mb-4">
           <div className="w-20 h-20 rounded-full bg-gradient-to-br flex items-center justify-center text-3xl font-bold text-white" style={{ background: gradient }}>
@@ -111,7 +111,7 @@ const directors = [
 
 export function DirectorsGrid() {
   return (
-    <div className="box-border content-stretch flex flex-col gap-5 items-center justify-center px-[174.5px] py-[50px] relative w-full bg-[#0A0A0A]">
+    <div className="box-border content-stretch flex flex-col gap-5 items-center justify-center px-4 md:px-8 lg:px-[174.5px] py-[50px] relative w-full bg-[#0A0A0A]">
       {/* Section Header */}
       <div className="box-border content-stretch flex flex-col items-center justify-center gap-5">
         <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0">
@@ -133,10 +133,10 @@ export function DirectorsGrid() {
           </div>
         </div>
         
-        <div className="box-border content-stretch flex flex-col items-center justify-center overflow-clip p-0 relative shrink-0 w-[654.92px]">
+        <div className="box-border content-stretch flex flex-col items-center justify-center overflow-clip p-0 relative shrink-0 w-full max-w-[654.92px] px-4 md:px-0">
           <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0">
-            <div className="relative shrink-0 w-[654.92px]">
-              <h2 className="flex flex-col font-['Satoshi:Regular',_sans-serif] justify-center leading-[50px] not-italic relative shrink-0 text-[#ebebeb] text-[50px] text-center tracking-[-2px]">
+            <div className="relative shrink-0 w-full">
+              <h2 className="flex flex-col font-['Satoshi:Regular',_sans-serif] justify-center leading-[35px] md:leading-[50px] not-italic relative shrink-0 text-[#ebebeb] text-[32px] md:text-[50px] text-center tracking-[-1px] md:tracking-[-2px]">
                 <span className="block">Meet The AI Directors</span>
                 <span className="block">Breaking The Internet</span>
               </h2>
@@ -144,9 +144,9 @@ export function DirectorsGrid() {
           </div>
         </div>
         
-        <div className="box-border content-stretch flex flex-col items-center justify-center overflow-clip p-0 relative shrink-0 w-full max-w-[600px]">
+        <div className="box-border content-stretch flex flex-col items-center justify-center overflow-clip p-0 relative shrink-0 w-full max-w-[600px] px-4 md:px-0">
           <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0">
-            <div className="box-border content-stretch flex flex-col items-center justify-start pl-[31.91px] pr-[31.92px] py-0 relative shrink-0 w-full">
+            <div className="box-border content-stretch flex flex-col items-center justify-start px-4 md:pl-[31.91px] md:pr-[31.92px] py-0 relative shrink-0 w-full">
               <div className="flex flex-col font-['Inter:Regular',_sans-serif] font-normal justify-center leading-[21.6px] not-italic relative shrink-0 text-[#b3b3b3] text-[18px] text-center tracking-[-0.36px]">
                 <p className="block">
                   These creators are using AI to generate millions of views every month. You could be next.
@@ -159,7 +159,7 @@ export function DirectorsGrid() {
       
       {/* Directors Grid */}
       <div className="box-border content-stretch flex flex-col gap-[80px] items-center justify-center pb-0 pt-[50px] px-4 md:px-8 relative w-full max-w-[1200px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full">
           {directors.map((director, index) => (
             <ScrollReveal key={director.name} delay={index * 0.1}>
               <DirectorCard {...director} />

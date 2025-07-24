@@ -146,31 +146,12 @@ export function Hero() {
                 </div>
               </div>
             </div>
-            <div className="relative w-full max-w-[1015px] mx-auto overflow-hidden py-4">
-              <div className="relative h-[55px] flex items-center justify-center">
-                {/* Static logos */}
-                <div className="flex items-center gap-16">
-                  <img alt="Logo 1" className="h-[42px] w-[171px] object-contain opacity-60" src="/images/logo-1.svg" />
-                  <img alt="Logo 2" className="h-[33px] w-[142px] object-contain opacity-60" src="/images/logo-2.svg" />
-                  <img alt="Logo 3" className="h-[42px] w-[169px] object-contain opacity-60" src="/images/logo-3.svg" />
-                  <img alt="Logo 4" className="h-[32px] w-[133px] object-contain opacity-60" src="/images/logo-4.svg" />
-                  <img alt="Logo 5" className="h-[39px] w-[99px] object-contain opacity-60" src="/images/logo-5.svg" />
-                </div>
-                
-                {/* Left blur overlay */}
-                <div className="absolute left-0 top-0 bottom-0 w-[283px] pointer-events-none">
-                  <div className="relative w-full h-full">
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent" />
-                  </div>
-                </div>
-                
-                {/* Right blur overlay */}
-                <div className="absolute right-0 top-0 bottom-0 w-[283px] pointer-events-none">
-                  <div className="relative w-full h-full">
-                    <div className="absolute inset-0 bg-gradient-to-l from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent" />
-                  </div>
-                </div>
-              </div>
+            <div className="box-border content-stretch flex flex-wrap flex-row gap-6 md:gap-10 items-center justify-center max-w-[1000px] pb-0 pt-[20px] px-4 md:px-[63px] relative shrink-0 w-full mx-auto">
+              <img alt="Logo 1" className="h-[32px] md:h-[42px] w-auto max-w-[130px] md:max-w-[171px] object-contain opacity-60" src="/images/logo-1.svg" />
+              <img alt="Logo 2" className="h-[26px] md:h-[33px] w-auto max-w-[110px] md:max-w-[142px] object-contain opacity-60" src="/images/logo-2.svg" />
+              <img alt="Logo 3" className="h-[32px] md:h-[42px] w-auto max-w-[130px] md:max-w-[169px] object-contain opacity-60" src="/images/logo-3.svg" />
+              <img alt="Logo 4" className="h-[26px] md:h-[32px] w-auto max-w-[100px] md:max-w-[133px] object-contain opacity-60" src="/images/logo-4.svg" />
+              <img alt="Logo 5" className="h-[30px] md:h-[39px] w-auto max-w-[80px] md:max-w-[99px] object-contain opacity-60" src="/images/logo-5.svg" />
             </div>
           </div>
         </FadeIn>
