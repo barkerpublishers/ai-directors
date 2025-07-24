@@ -11,17 +11,15 @@ export function Hero() {
 
   return (
     <div className="relative min-h-screen bg-[#0A0A0A] overflow-hidden pt-[76px]">
-      {/* Figma spotlight background - positioned top right */}
-      <div 
-        className="absolute -top-[20%] -right-[20%] w-[100%] h-[100%] pointer-events-none transform rotate-[-20deg]"
-        style={{
-          backgroundImage: `url('http://localhost:3845/assets/a1f37b085c93eca9b64776fd1653d9c84701ba7b.png')`,
-          backgroundSize: 'contain',
-          backgroundPosition: 'top right',
-          backgroundRepeat: 'no-repeat',
-          opacity: 0.7
-        }}
-      />
+      {/* Spotlight from Figma */}
+      <div className="absolute bottom-0 box-border content-stretch flex flex-col items-start justify-center left-0 p-0 top-0 w-[1091px]">
+        <div
+          className="[background-size:100%_100%] basis-0 bg-[0%_49.95%] bg-no-repeat grow min-h-px min-w-px shrink-0 w-full"
+          style={{
+            backgroundImage: `url('/images/spotlight-bg.png')`,
+          }}
+        />
+      </div>
 
       {/* Bottom gradient fade */}
       <div className="absolute bottom-0 left-0 right-0 h-[40vh] bg-gradient-to-t from-[#0A0A0A] to-transparent pointer-events-none" />
@@ -151,7 +149,7 @@ export function Hero() {
                   <div className="h-[55px] max-h-[843px] max-w-[1349px] relative shrink-0 w-full">
                     <div 
                       className="absolute inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0%] mask-size-[100%_100%] overflow-clip"
-                      style={{ maskImage: `url('http://localhost:3845/assets/cb4e13d8e90b71ca952fda5817e571a8ba01a7ce.svg')` }}
+                      style={{ maskImage: `url('/images/section-mask.svg')` }}
                     >
                       <div className="absolute box-border content-stretch flex flex-row gap-16 h-[55px] items-center justify-start left-[-2394px] max-h-[55px] max-w-[1015px] pl-[2394px] pr-0 py-[6.5px] right-[2394px] top-1/2 translate-y-[-50%]">
                         {/* Logo 1 */}
@@ -160,7 +158,7 @@ export function Hero() {
                             <div className="absolute h-[42px] left-0 overflow-clip top-0 w-[171px]">
                               <div className="absolute h-[42px] left-0 overflow-clip top-0 w-[171px]">
                                 <div className="absolute bottom-[1.19%] left-[0.292%] right-[0.292%] top-[1.19%]">
-                                  <img alt="" className="block max-w-none size-full" src="http://localhost:3845/assets/2ea09517863800b0ff86b291bb5c0d2b1d30800f.svg" />
+                                  <img alt="" className="block max-w-none size-full" src="/images/logo-1.svg" />
                                 </div>
                               </div>
                             </div>
@@ -172,7 +170,7 @@ export function Hero() {
                             <div className="absolute h-[33px] left-0 overflow-clip top-0 w-[142px]">
                               <div className="absolute h-[33px] left-0 overflow-clip top-0 w-[142px]">
                                 <div className="absolute bottom-[1.221%] left-[0.282%] right-[0.282%] top-[1.218%]">
-                                  <img alt="" className="block max-w-none size-full" src="http://localhost:3845/assets/9a21133d3ab2583f5f32655ab4684e89b4ee99de.svg" />
+                                  <img alt="" className="block max-w-none size-full" src="/images/logo-2.svg" />
                                 </div>
                               </div>
                             </div>
@@ -184,7 +182,7 @@ export function Hero() {
                             <div className="absolute h-[42px] left-0 overflow-clip top-0 w-[169px]">
                               <div className="absolute h-[42px] left-0 overflow-clip top-0 w-[169px]">
                                 <div className="absolute bottom-[1.19%] left-[0.296%] right-[0.296%] top-[1.19%]">
-                                  <img alt="" className="block max-w-none size-full" src="http://localhost:3845/assets/6332deace7c8c2a57d428705f9f3b42475707b02.svg" />
+                                  <img alt="" className="block max-w-none size-full" src="/images/logo-3.svg" />
                                 </div>
                               </div>
                             </div>
@@ -196,7 +194,7 @@ export function Hero() {
                             <div className="absolute h-8 left-0 overflow-clip top-0 w-[133px]">
                               <div className="absolute h-8 left-0 overflow-clip top-0 w-[133px]">
                                 <div className="absolute bottom-[1.219%] left-[0.294%] right-[0.294%] top-[1.219%]">
-                                  <img alt="" className="block max-w-none size-full" src="http://localhost:3845/assets/0f11ac2a90ba5235ccceb96e21bd4bcace1f00c7.svg" />
+                                  <img alt="" className="block max-w-none size-full" src="/images/logo-4.svg" />
                                 </div>
                               </div>
                             </div>
@@ -208,7 +206,7 @@ export function Hero() {
                             <div className="absolute h-[39px] left-0 overflow-clip top-0 w-[99px]">
                               <div className="absolute h-[39px] left-0 overflow-clip top-0 w-[99px]">
                                 <div className="absolute bottom-[1.613%] left-[0.633%] right-[0.632%] top-[1.613%]">
-                                  <img alt="" className="block max-w-none size-full" src="http://localhost:3845/assets/f3678a7541ccc64f7d2744db5b71af3ddf286071.svg" />
+                                  <img alt="" className="block max-w-none size-full" src="/images/logo-5.svg" />
                                 </div>
                               </div>
                             </div>
@@ -224,49 +222,49 @@ export function Hero() {
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[0.047px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/a9221aabbae9fcfb626eb4d0a62fdd237c25ae45.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-1.svg')` }}
                       />
                     </div>
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[0.094px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/378bbec124d829f222ba0e643810d790d142f92f.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-2.svg')` }}
                       />
                     </div>
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[0.188px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/63b3a39d5fe6ca443d93ed02b6872e3037c310d6.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-3.svg')` }}
                       />
                     </div>
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[0.375px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/e2cbdbc601fd837062eb5638ea001fd21b14531c.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-4.svg')` }}
                       />
                     </div>
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[0.75px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/0ef8c85f532d1918947f89cdb038a8b62811e28c.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-5.svg')` }}
                       />
                     </div>
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[1.5px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/affa7c6944e28177a5c209b31d0888d987ded8ba.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-6.svg')` }}
                       />
                     </div>
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[3px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/6a40a2aec8957110040d164fceafe0997c3205f3.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-7.svg')` }}
                       />
                     </div>
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[6px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/49b71b0cc514e83e744920f1df14379ddae59e79.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-8.svg')` }}
                       />
                     </div>
                   </div>
@@ -277,49 +275,49 @@ export function Hero() {
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[0.047px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/bd994bb1aba2bf6fc6f52c456d5e294077614ba9.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-9.svg')` }}
                       />
                     </div>
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[0.094px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/a9221aabbae9fcfb626eb4d0a62fdd237c25ae45.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-1.svg')` }}
                       />
                     </div>
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[0.188px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/6fe2d97fad9dd20a3748ec6a23d5a65952ee07b4.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-10.svg')` }}
                       />
                     </div>
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[0.375px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/0fa8c52864c1bf4bc9a8f75f35447f4a078d3b48.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-11.svg')` }}
                       />
                     </div>
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[0.75px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/801486f5b9511316af039d96505b2ec186aa8b29.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-12.svg')` }}
                       />
                     </div>
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[1.5px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/573446d73d534f5e25075d70c6f9d7cb8068f83d.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-13.svg')` }}
                       />
                     </div>
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[3px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/0c959d6acea7c111e45e6b6e10e6019b58c06c02.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-14.svg')` }}
                       />
                     </div>
                     <div className="absolute inset-0">
                       <div 
                         className="absolute backdrop-blur-[6px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('http://localhost:3845/assets/b22b04a093e6e986ba82cf65d92729a3287a47f5.svg')` }}
+                        style={{ maskImage: `url('/images/blur-overlay-15.svg')` }}
                       />
                     </div>
                   </div>
