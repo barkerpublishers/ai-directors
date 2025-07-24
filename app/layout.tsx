@@ -49,7 +49,7 @@ export default function RootLayout({
           inter.variable,
           spaceGrotesk.variable,
           bebasNeue.variable,
-          'font-inter antialiased bg-black text-white min-h-screen'
+          'font-inter antialiased bg-black text-white min-h-screen overflow-x-hidden'
         )}
       >
         <Navbar />

@@ -11,12 +11,16 @@ export function Hero() {
 
   return (
     <div className="relative min-h-screen bg-[#0A0A0A] overflow-hidden pt-[76px]">
-      {/* Spotlight from Figma */}
-      <div className="absolute bottom-0 box-border content-stretch flex flex-col items-start justify-center left-0 p-0 top-0 w-[1091px]">
+      {/* Spotlight from Figma - positioned top right */}
+      <div className="absolute -top-[20%] -right-[10%] w-[80%] h-[120%] pointer-events-none">
         <div
-          className="[background-size:100%_100%] basis-0 bg-[0%_49.95%] bg-no-repeat grow min-h-px min-w-px shrink-0 w-full"
+          className="w-full h-full"
           style={{
             backgroundImage: `url('/images/spotlight-bg.png')`,
+            backgroundSize: 'contain',
+            backgroundPosition: 'top right',
+            backgroundRepeat: 'no-repeat',
+            opacity: 0.7
           }}
         />
       </div>
@@ -143,182 +147,21 @@ export function Hero() {
                 </div>
               </div>
             </div>
-            <div className="box-border content-stretch flex flex-row h-[91px] items-center justify-center overflow-clip px-[167px] py-[18px] relative shrink-0 w-[1349px]">
-              <div className="box-border content-stretch flex flex-col items-center justify-center max-w-[1200px] overflow-clip p-0 relative shrink-0 w-[1015px]">
-                <div className="box-border content-stretch flex flex-col h-[55px] items-start justify-center p-0 relative shrink-0 w-[1015px]">
-                  <div className="h-[55px] max-h-[843px] max-w-[1349px] relative shrink-0 w-full">
-                    <div 
-                      className="absolute inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0%] mask-size-[100%_100%] overflow-clip"
-                      style={{ maskImage: `url('/images/section-mask.svg')` }}
-                    >
-                      <div className="absolute box-border content-stretch flex flex-row gap-16 h-[55px] items-center justify-start left-[-2394px] max-h-[55px] max-w-[1015px] pl-[2394px] pr-0 py-[6.5px] right-[2394px] top-1/2 translate-y-[-50%]">
-                        {/* Logo 1 */}
-                        <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0">
-                          <div className="h-[42px] relative shrink-0 w-[171px]">
-                            <div className="absolute h-[42px] left-0 overflow-clip top-0 w-[171px]">
-                              <div className="absolute h-[42px] left-0 overflow-clip top-0 w-[171px]">
-                                <div className="absolute bottom-[1.19%] left-[0.292%] right-[0.292%] top-[1.19%]">
-                                  <img alt="" className="block max-w-none size-full" src="/images/logo-1.svg" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {/* Logo 2 */}
-                        <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0">
-                          <div className="h-[33px] relative shrink-0 w-[142px]">
-                            <div className="absolute h-[33px] left-0 overflow-clip top-0 w-[142px]">
-                              <div className="absolute h-[33px] left-0 overflow-clip top-0 w-[142px]">
-                                <div className="absolute bottom-[1.221%] left-[0.282%] right-[0.282%] top-[1.218%]">
-                                  <img alt="" className="block max-w-none size-full" src="/images/logo-2.svg" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {/* Logo 3 */}
-                        <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0">
-                          <div className="h-[42px] relative shrink-0 w-[169px]">
-                            <div className="absolute h-[42px] left-0 overflow-clip top-0 w-[169px]">
-                              <div className="absolute h-[42px] left-0 overflow-clip top-0 w-[169px]">
-                                <div className="absolute bottom-[1.19%] left-[0.296%] right-[0.296%] top-[1.19%]">
-                                  <img alt="" className="block max-w-none size-full" src="/images/logo-3.svg" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {/* Logo 4 */}
-                        <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0">
-                          <div className="h-8 relative shrink-0 w-[133px]">
-                            <div className="absolute h-8 left-0 overflow-clip top-0 w-[133px]">
-                              <div className="absolute h-8 left-0 overflow-clip top-0 w-[133px]">
-                                <div className="absolute bottom-[1.219%] left-[0.294%] right-[0.294%] top-[1.219%]">
-                                  <img alt="" className="block max-w-none size-full" src="/images/logo-4.svg" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        {/* Logo 5 */}
-                        <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0">
-                          <div className="h-[39px] relative shrink-0 w-[99px]">
-                            <div className="absolute h-[39px] left-0 overflow-clip top-0 w-[99px]">
-                              <div className="absolute h-[39px] left-0 overflow-clip top-0 w-[99px]">
-                                <div className="absolute bottom-[1.613%] left-[0.633%] right-[0.632%] top-[1.613%]">
-                                  <img alt="" className="block max-w-none size-full" src="/images/logo-5.svg" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Right blur overlay */}
-                <div className="absolute bottom-0 box-border content-stretch flex flex-col h-[55px] items-start justify-center p-0 right-[-13px] w-[283px]">
-                  <div className="basis-0 grow min-h-px min-w-px relative rounded-xl shrink-0 w-full">
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[0.047px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-1.svg')` }}
-                      />
-                    </div>
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[0.094px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-2.svg')` }}
-                      />
-                    </div>
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[0.188px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-3.svg')` }}
-                      />
-                    </div>
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[0.375px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-4.svg')` }}
-                      />
-                    </div>
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[0.75px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-5.svg')` }}
-                      />
-                    </div>
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[1.5px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-6.svg')` }}
-                      />
-                    </div>
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[3px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-7.svg')` }}
-                      />
-                    </div>
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[6px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-8.svg')` }}
-                      />
-                    </div>
-                  </div>
-                </div>
-                {/* Left blur overlay */}
-                <div className="absolute bottom-0 box-border content-stretch flex flex-col h-[55px] items-start justify-center left-[-14px] p-0 w-[283px]">
-                  <div className="basis-0 grow min-h-px min-w-px relative rounded-xl shrink-0 w-full">
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[0.047px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-9.svg')` }}
-                      />
-                    </div>
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[0.094px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-1.svg')` }}
-                      />
-                    </div>
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[0.188px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-10.svg')` }}
-                      />
-                    </div>
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[0.375px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-11.svg')` }}
-                      />
-                    </div>
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[0.75px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-12.svg')` }}
-                      />
-                    </div>
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[1.5px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-13.svg')` }}
-                      />
-                    </div>
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[3px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-14.svg')` }}
-                      />
-                    </div>
-                    <div className="absolute inset-0">
-                      <div 
-                        className="absolute backdrop-blur-[6px] backdrop-filter inset-0 mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[0px_0%] mask-size-[283px_100%] rounded-xl"
-                        style={{ maskImage: `url('/images/blur-overlay-15.svg')` }}
-                      />
+            <div className="box-border content-stretch flex flex-row h-[91px] items-center justify-center overflow-visible px-4 md:px-8 lg:px-[167px] py-[18px] relative shrink-0 w-full">
+              <div className="box-border content-stretch flex flex-col items-center justify-center max-w-[1200px] overflow-visible p-0 relative shrink-0 w-full">
+                <div className="box-border content-stretch flex flex-col h-[55px] items-center justify-center p-0 relative shrink-0 w-full">
+                  <div className="h-[55px] relative shrink-0 w-full overflow-hidden">
+                    <div className="flex flex-row gap-16 h-[55px] items-center justify-center">
+                      {/* Logo 1 */}
+                      <img alt="Logo 1" className="h-[42px] w-auto" src="/images/logo-1.svg" />
+                      {/* Logo 2 */}
+                      <img alt="Logo 2" className="h-[33px] w-auto" src="/images/logo-2.svg" />
+                      {/* Logo 3 */}
+                      <img alt="Logo 3" className="h-[42px] w-auto" src="/images/logo-3.svg" />
+                      {/* Logo 4 */}
+                      <img alt="Logo 4" className="h-[32px] w-auto" src="/images/logo-4.svg" />
+                      {/* Logo 5 */}
+                      <img alt="Logo 5" className="h-[39px] w-auto" src="/images/logo-5.svg" />
                     </div>
                   </div>
                 </div>
