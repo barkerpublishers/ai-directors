@@ -232,7 +232,7 @@ export function Integration() {
                       <div className="flex flex-col font-['Satoshi:Regular',_sans-serif] justify-center leading-[24px] not-italic relative shrink-0 text-[#d1d1d1] text-[16px] text-left">
                         <p className="block mb-0">Become an AI Director by creating your first viral AI video. Unlock the power to command millions of views at your fingertips. Discover how to wield cutting-edge AI tools that turn your phone into a viral video production studio.</p>
                         <p className="block mb-2"></p>
-                        <p className="block mb-0">Learn the secrets of creating thumb-stopping AI video content that captures global attention. By the end of this module, you'll carry the confidence and capability of an official AI Director.</p>
+                        <p className="block mb-0">Learn the secrets of creating thumb-stopping AI video content that captures global attention. By the end of this module, you&apos;ll carry the confidence and capability of an official AI Director.</p>
                       </div>
                     </div>
                   </div>
@@ -280,7 +280,7 @@ export function Integration() {
                       <div className="flex flex-col font-['Satoshi:Regular',_sans-serif] justify-center leading-[24px] not-italic relative shrink-0 text-[#d1d1d1] text-[16px] text-left">
                         <p className="block mb-0">Create your own AI-powered virtual personality that works 24/7 to grow your digital brands (or your clients). Learn how to design and deploy an AI influencer that embodies your vision — from crafting their unique persona and visual identity to programming their voice and content style.</p>
                         <p className="block mb-2"></p>
-                        <p className="block mb-0">Master the tools that let you generate endless content, engage audiences, and scale your influence beyond human limitations. By the end of this module, you'll have birthed a digital ambassador that never sleeps, never burns out, and consistently delivers your message to audiences worldwide.</p>
+                        <p className="block mb-0">Master the tools that let you generate endless content, engage audiences, and scale your influence beyond human limitations. By the end of this module, you&apos;ll have birthed a digital ambassador that never sleeps, never burns out, and consistently delivers your message to audiences worldwide.</p>
                       </div>
                     </div>
                   </div>
@@ -320,7 +320,7 @@ export function Integration() {
                       <div className="flex flex-col font-['Satoshi:Regular',_sans-serif] justify-center leading-[24px] not-italic relative shrink-0 text-[#d1d1d1] text-[16px] text-left">
                         <p className="block mb-0">Transform your AI-powered content into multiple revenue streams with proven monetization strategies used by seven-figure creators. Discover how to architect income ecosystems around your viral videos and AI influencers — from platform monetization and brand partnerships to digital products and subscription models.</p>
                         <p className="block mb-2"></p>
-                        <p className="block mb-0">Learn the exact frameworks that convert views into revenue while you sleep. By mastering this blueprint, you'll turn your creative vision into a sustainable business empire where every piece of content becomes a potential profit center.</p>
+                        <p className="block mb-0">Learn the exact frameworks that convert views into revenue while you sleep. By mastering this blueprint, you&apos;ll turn your creative vision into a sustainable business empire where every piece of content becomes a potential profit center.</p>
                       </div>
                     </div>
                   </div>

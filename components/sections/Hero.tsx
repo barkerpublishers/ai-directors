@@ -140,7 +140,7 @@ export function Hero() {
               <div className="absolute bottom-0 box-border content-stretch flex flex-col items-start justify-start left-[3.209%] p-0 right-[3.209%] top-0">
                 <div className="box-border content-stretch flex flex-col items-center justify-start p-0 relative shrink-0 w-full">
                   <div className="flex flex-col font-['Inter:Regular',_sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#eeebdd] text-[16px] text-center w-full">
-                    <p className="block leading-[24px]">You're in expert hands.</p>
+                    <p className="block leading-[24px]">You&apos;re in expert hands.</p>
                   </div>
                 </div>
               </div>
