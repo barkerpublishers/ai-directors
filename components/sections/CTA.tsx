@@ -3,7 +3,7 @@
 import { FadeIn } from '@/components/animations/FadeIn'
 import { ScrollReveal } from '@/components/animations/ScrollReveal'
 
-const imgImage = "http://localhost:3845/assets/27d3c3d33f12ccc1d3d8ac57fd00a56c3e50ecf5.png"
+const imgImage = "/images/blur-overlay-2.svg"
 
 export function CTA() {
   return (

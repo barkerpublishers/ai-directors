@@ -123,7 +123,7 @@ export function Hero() {
               <div 
                 className="absolute top-[10%] right-[10%] w-[282px] h-[282px] z-20"
                 style={{
-                  backgroundImage: `url('http://localhost:3845/assets/c50c77c07cda4d97ebc3c23a21d4f00908a365a4.png')`,
+                  backgroundImage: `url('/images/blur-overlay-1.svg')`,
                   backgroundSize: '100.04% 100%',
                   backgroundPosition: 'top',
                   backgroundRepeat: 'no-repeat',

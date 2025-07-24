@@ -5,12 +5,12 @@ import { FadeIn } from '@/components/animations/FadeIn'
 import { ScrollReveal } from '@/components/animations/ScrollReveal'
 
 const imgKNko2DRLqFeJj5O8QEgsrPtGrc4Png = "/images/ai-1.gif"
-const imgGavNcs3XZtVjOlXcCKz9DnAfR8Png = "http://localhost:3845/assets/bfe00b38b7e0203d1cfba79a91009210b5f14615.png"
-const imgSs103556502891 = "http://localhost:3845/assets/0f11ac2a90ba5235ccceb96e21bd4bcace1f00c7.svg"
-const imgSs86530361421 = "http://localhost:3845/assets/9a21133d3ab2583f5f32655ab4684e89b4ee99de.svg"
-const imgSs106019743151 = "http://localhost:3845/assets/f3678a7541ccc64f7d2744db5b71af3ddf286071.svg"
-const imgSs114740527271 = "http://localhost:3845/assets/6332deace7c8c2a57d428705f9f3b42475707b02.svg"
-const imgSs116947674721 = "http://localhost:3845/assets/2ea09517863800b0ff86b291bb5c0d2b1d30800f.svg"
+const imgGavNcs3XZtVjOlXcCKz9DnAfR8Png = "/images/ai-3.gif"
+const imgSs103556502891 = "/images/logo-1.svg"
+const imgSs86530361421 = "/images/logo-2.svg"
+const imgSs106019743151 = "/images/logo-3.svg"
+const imgSs114740527271 = "/images/logo-4.svg"
+const imgSs116947674721 = "/images/logo-5.svg"
 
 interface ButtonPrimaryProps {
   text?: string
