@@ -1,6 +1,7 @@
 'use client'
 
 import { FadeIn } from '@/components/animations/FadeIn'
+import Image from 'next/image'
 
 export function Hero() {
   const scrollToCTA = () => {
@@ -110,10 +111,13 @@ export function Hero() {
           <div className="relative mt-16 w-full max-w-[1118px] mx-auto">
             <div className="relative h-[580px] overflow-hidden rounded-[53px] bg-gradient-to-br from-blue-900/10 via-purple-900/10 to-black/50">
               {/* Dashboard image */}
-              <img 
+              <Image 
                 src="/images/dashboard-preview.jpg" 
                 alt="AI Directors Dashboard Preview" 
                 className="w-full h-full object-cover rounded-[53px]"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1118px"
               />
               
               {/* Overlay gradient for better integration */}
@@ -147,11 +151,21 @@ export function Hero() {
               </div>
             </div>
             <div className="box-border content-stretch flex flex-wrap flex-row gap-6 md:gap-10 items-center justify-center max-w-[1000px] pb-0 pt-[20px] px-4 md:px-[63px] relative shrink-0 w-full mx-auto">
-              <img alt="Logo 1" className="h-[32px] md:h-[42px] w-auto max-w-[130px] md:max-w-[171px] object-contain opacity-60" src="/images/logo-1.svg" />
-              <img alt="Logo 2" className="h-[26px] md:h-[33px] w-auto max-w-[110px] md:max-w-[142px] object-contain opacity-60" src="/images/logo-2.svg" />
-              <img alt="Logo 3" className="h-[32px] md:h-[42px] w-auto max-w-[130px] md:max-w-[169px] object-contain opacity-60" src="/images/logo-3.svg" />
-              <img alt="Logo 4" className="h-[26px] md:h-[32px] w-auto max-w-[100px] md:max-w-[133px] object-contain opacity-60" src="/images/logo-4.svg" />
-              <img alt="Logo 5" className="h-[30px] md:h-[39px] w-auto max-w-[80px] md:max-w-[99px] object-contain opacity-60" src="/images/logo-5.svg" />
+              <div className="relative h-[32px] md:h-[42px] w-[130px] md:w-[171px]">
+                <Image alt="Logo 1" className="object-contain opacity-60" src="/images/logo-1.svg" fill sizes="(max-width: 768px) 130px, 171px" />
+              </div>
+              <div className="relative h-[26px] md:h-[33px] w-[110px] md:w-[142px]">
+                <Image alt="Logo 2" className="object-contain opacity-60" src="/images/logo-2.svg" fill sizes="(max-width: 768px) 110px, 142px" />
+              </div>
+              <div className="relative h-[32px] md:h-[42px] w-[130px] md:w-[169px]">
+                <Image alt="Logo 3" className="object-contain opacity-60" src="/images/logo-3.svg" fill sizes="(max-width: 768px) 130px, 169px" />
+              </div>
+              <div className="relative h-[26px] md:h-[32px] w-[100px] md:w-[133px]">
+                <Image alt="Logo 4" className="object-contain opacity-60" src="/images/logo-4.svg" fill sizes="(max-width: 768px) 100px, 133px" />
+              </div>
+              <div className="relative h-[30px] md:h-[39px] w-[80px] md:w-[99px]">
+                <Image alt="Logo 5" className="object-contain opacity-60" src="/images/logo-5.svg" fill sizes="(max-width: 768px) 80px, 99px" />
+              </div>
             </div>
           </div>
         </FadeIn>

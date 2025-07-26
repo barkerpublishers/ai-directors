@@ -135,7 +135,7 @@ export function ProductStack() {
                   30-Day Money-Back Guarantee
                 </h3>
                 <p className="font-['Inter:Regular',_sans-serif] text-[#b3b3b3] text-base md:text-lg leading-relaxed mb-6">
-                  We're so confident in the AI Directors Academy that we offer a full 30-day money-back guarantee. If you don't see real results from implementing our strategies, simply reach out to our support team for a complete refund. No questions asked.
+                  We&apos;re so confident in the AI Directors Academy that we offer a full 30-day money-back guarantee. If you don&apos;t see real results from implementing our strategies, simply reach out to our support team for a complete refund. No questions asked.
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center text-sm text-[#8a8a8a]">
                   <div className="flex items-center gap-2">
